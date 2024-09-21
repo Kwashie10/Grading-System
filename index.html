@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Form Section -->
+      <form id="grade-form">
+        <h2>Student Information</h2>
+        <label for="studentID">Student ID</label>
+        <input type="text" id="studentID" name="studentID" />
+
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname" />
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" />
+
+        <label for="programme">Programme</label>
+        <input type="text" id="programme" name="programme" />
+
+        <label for="ctest">Class Test</label>
+        <input type="number" id="ctest" name="ctest" />
+
+        <label for="cquiz">Class Quiz</label>
+        <input type="number" id="cquiz" name="cquiz" />
+
+        <label for="exam">Exam</label>
+        <input type="number" id="exam" name="exam" />
+
+        <button type="button" id="submit-btn">Add Student</button>
+      </form>
+
+      <!-- Table Section -->
+      <div>
+        <h2>Student List</h2>
+        <button type="button" id="download-btn">Download CSV</button>
+        <table id="student-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Surname</th>
+              <th>First Name</th>
+              <th>Programme</th>
+              <th>Total</th>
+              <th>Grade</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
